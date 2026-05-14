@@ -81,6 +81,10 @@ app.get('/listSchools', async (req, res) => {
     }
 });
 
+app.get('/', (req, res) => {
+    res.send("Server is working fine!");
+});
+
 
 const PORT = process.env.PORT || 3000;
 app.listen(PORT, () => {
